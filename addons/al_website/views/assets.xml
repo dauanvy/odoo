@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>	
+	<template id="al_website_assets_frontend" name="Kdvn Css frontend" inherit_id="website.assets_frontend">
+		<xpath expr="link[last()]" position="after">
+			<link href="/al_website/static/src/css/al_website.css" rel="stylesheet" type="text/css"/>
+		</xpath>
+	</template>
+	<template id="al_website_assets_frontend_js" inherit_id="website.assets_frontend" name="Kdvn Js Front-end">
+		<xpath expr="//script[last()]" position="after">
+			<script type="text/javascript" src="/al_website/static/src/js/al_website.js"></script>
+		</xpath>
+	</template>
+</odoo>

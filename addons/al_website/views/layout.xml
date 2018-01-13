@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<!-- Customize header  -->
+<template id="kdvn_theme_demo_header" inherit_id="website.layout" name="Custom Header">
+	<xpath expr="//div[@id='wrapwrap']/header" position="replace">
+		<header id="my_header">
+			<h1 style="background:green">Header</h1>
+		</header>
+	</xpath>
+</template>
+<template id="kdvn_theme_demo_homepage_inherit" inherit_id="website.homepage">
+	<data inherit_id="website.homepage">
+		<xpath expr="//div" position="inside">
+			<section id="about" class="bg-primary">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							About
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="services" class="bg-info">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							Services
+						</div>
+					</div>
+				</div>
+			</section>
+		</xpath>
+	</data>
+</template>
+<template id="kdvn_theme_demo_footer" inherit_id="website.layout" name="Custom footer">
+	<xpath expr="//div[@id='wrapwrap']/footer" position="replace">
+		<footer class="container-fluid text-center">
+			<p>Footer Text</p>
+		</footer>
+	</xpath>
+</template>
+</odoo>
